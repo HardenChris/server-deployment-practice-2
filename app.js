@@ -14,7 +14,12 @@ class Message {
   }
 }
 
+app.get('/data', (request, response) => {
+  console.log('Someone sent a request!: ' + request.method);
+  // create a message and send it back?
 
+  response.send(messages);
+});// this method/ func modifies out app singleton
 
 
 // 2 things
